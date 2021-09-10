@@ -1,0 +1,44 @@
+.skills_habilities {
+   display: flex;
+   flex-direction: column;
+
+   h1 {
+      font-size: 2rem;
+   }
+}
+
+.skills_studies {
+   display: flex;
+   flex-direction: column;
+
+   h1 {
+      font-size: 3rem;
+   }
+}
+
+.skills_habilities-logo {
+   align-items: center;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   margin: 10px;
+
+   img {
+      margin-left: 1rem;
+   }
+
+   h2 {
+      font-size: 2rem;
+      text-align: center;
+   }
+}
+
+.skills_studies-logo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 1rem;
+   img {
+      width: 80%;
+   }
+}

@@ -1,0 +1,10 @@
+footer {
+   @include header-footer;
+   justify-content: center;
+   a {
+      margin: 0.5rem;
+      img {
+         width: 1.75rem;
+      }
+   }
+}

@@ -1,0 +1,76 @@
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Glory', sans-serif;
+}
+
+html {
+   box-sizing: border-box;
+}
+
+body {
+   background-color: $fondo;
+}
+
+#root {
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+}
+
+h1 {
+   color: $title;
+   font-weight: bold;
+}
+h2 {
+   color: $texto;
+}
+a {
+   text-decoration: none;
+   color: black;
+}
+p {
+   color: $texto;
+   font-size: 1rem;
+}
+
+.main {
+   width: 95%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   text-align: center;
+   padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.animation {
+   animation-duration: 1s;
+   animation-name: opacidad;
+   overflow-y: scroll;
+   height: 75vh;
+}
+
+@keyframes opacidad {
+   0% {
+      opacity: 0;
+   }
+   20% {
+      opacity: 0.2;
+   }
+   40% {
+      opacity: 0.4;
+   }
+   60% {
+      opacity: 0.6;
+   }
+   80% {
+      opacity: 0.8;
+   }
+   100% {
+      opacity: 1;
+   }
+}

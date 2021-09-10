@@ -1,0 +1,15 @@
+$fondo: #222831;
+$colorHeaderFooter: #222831;
+$title: #008b92;
+$texto: #cccccc;
+$fontH2: 1.2rem;
+
+@mixin header-footer {
+   width: 90%;
+   display: flex;
+   align-items: center;
+   padding: 0.5rem;
+   justify-content: space-around;
+   background-color: $colorHeaderFooter;
+   margin: 0.5rem;
+}
