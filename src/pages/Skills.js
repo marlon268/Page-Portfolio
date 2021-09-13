@@ -14,7 +14,7 @@ import courseScrum from '../assets/scrum.PNG';
 
 export const Skills = () => {
    return (
-      <div className="animation">
+      <div className="main animation">
          <div className="skills_habilities">
             <div>
                <h1>Skills and Certificates</h1>

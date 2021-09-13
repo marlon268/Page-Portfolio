@@ -4,6 +4,33 @@ $title: #008b92;
 $texto: #cccccc;
 $fontH2: 1.2rem;
 
+/* Media Queries */
+$desktop: 1080px;
+$tablet: 720px;
+$celular: 0px;
+
+/* Mixin of media query */
+@mixin media($breakpoint) {
+   @if $breakpoint == celular {
+      @media only screen and (min-width: $celular) {
+         @content;
+      }
+   }
+
+   @if $breakpoint == tablet {
+      @media only screen and (min-width: $tablet) {
+         @content;
+      }
+   }
+
+   @if $breakpoint == desktop {
+      @media only screen and (min-width: $desktop) {
+         @content;
+      }
+   }
+}
+
+/* Mixins of components */
 @mixin header-footer {
    width: 90%;
    display: flex;

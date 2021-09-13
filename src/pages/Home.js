@@ -1,5 +1,5 @@
 import React from 'react';
-import img from '../assets/Tech Life Blockchain.png';
+import img from '../assets/Tech Life Remote Life.png';
 
 export const Home = () => {
    return (
@@ -9,7 +9,7 @@ export const Home = () => {
             Hi, I'm a frontend developer. passionate about programming and web
             development
          </h2>
-         <img src={img} alt="woman in the phone" />
+         <img className="home-img" src={img} alt="woman in the phone" />
       </div>
    );
 };

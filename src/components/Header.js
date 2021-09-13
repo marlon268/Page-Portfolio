@@ -4,6 +4,7 @@ import { NavModal } from './NavModal';
 
 import logo from '../assets/file-icons_wolfram.svg';
 import amburguer from '../assets/hamburger-button.svg';
+import { Nav } from './Nav';
 
 const customStyles = {
    overlay: {
@@ -16,10 +17,11 @@ const customStyles = {
    },
    content: {
       position: 'absolute',
-      top: '10%',
-      left: '25%',
-      right: '25%',
-      bottom: '65%',
+      top: '20%',
+      left: '50%',
+      right: 'auto',
+      bottom: 'auto',
+      transform: 'translate(-50%, -50%)',
       border: '1px solid black',
       background: 'rgba(34, 40, 49, 1)',
       overflow: 'none',
@@ -45,7 +47,7 @@ export const Header = () => {
 
    return (
       <header>
-         <div>
+         <div className="header-button">
             <button onClick={openModal}>
                <img src={amburguer} alt="nav" />
             </button>
@@ -58,6 +60,7 @@ export const Header = () => {
          >
             <NavModal closeModal={closeModal} />
          </ReactModal>
+         <Nav />
          <div className="header_name">
             <h1>Marlon Varon</h1>
          </div>

@@ -7,4 +7,13 @@ footer {
          width: 1.75rem;
       }
    }
+   @include media(tablet) {
+      h2 {
+         font-size: 2rem;
+      }
+
+      img {
+         width: 3rem;
+      }
+   }
 }

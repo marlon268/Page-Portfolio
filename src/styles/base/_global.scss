@@ -30,7 +30,7 @@ h2 {
 }
 a {
    text-decoration: none;
-   color: black;
+   color: $texto;
 }
 p {
    color: $texto;
@@ -45,13 +45,35 @@ p {
    align-items: center;
    text-align: center;
    padding: 0.5rem 0.5rem 0 0.5rem;
+
+   @include media(tablet) {
+      h1 {
+         font-size: 3rem;
+      }
+
+      h2 {
+         font-size: 3rem;
+      }
+   }
 }
 
 .animation {
    animation-duration: 1s;
    animation-name: opacidad;
-   overflow-y: scroll;
+   overflow-y: auto;
    height: 75vh;
+
+   &::-webkit-scrollbar {
+      width: 5px;
+   }
+
+   &::-webkit-scrollbar-track {
+      background: lighten($color: $fondo, $amount: 10);
+   }
+
+   &::-webkit-scrollbar-thumb {
+      background: darken($color: $title, $amount: 5);
+   }
 }
 
 @keyframes opacidad {

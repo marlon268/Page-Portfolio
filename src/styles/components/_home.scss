@@ -1,4 +1,11 @@
 .home_content {
    margin: 1rem;
    text-align: center;
+   width: 70%;
+}
+
+.home-img {
+   @include media(tablet) {
+      width: 350px;
+   }
 }
